@@ -22,11 +22,12 @@ def func_and_arg(*args):
         func_and = func_and.replace("_", " ")
 
         arguments_and = func.__code__.co_varnames
-        # не придумал как отредактировать внутри агрумента(
 
+        # не придумал как отредактировать внутри агрумента(
+        print("==FUNCTION==")
         print("Function name ===> " + func_and +  '\nArgument ===> ', arguments_and)
         function_number += 1
 
-func_and_arg(open_browser,go_to_companyname_homepage, find_registration_button_on_login_page())
+func_and_arg(open_browser,find_registration_button_on_login_page,go_to_companyname_homepage)
 
 
